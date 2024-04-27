@@ -34,7 +34,7 @@ class Dado {
         point(this.posicion.x-25, this.posicion.y-25);
         point(this.posicion.x-25, this.posicion.y+25);
         point(this.posicion.x+25, this.posicion.y-25);
-        point(this.posicion.x-25, this.posicion.y+25);
+        point(this.posicion.x+25, this.posicion.y+25);
         break;
       }
       case 5:{
@@ -71,4 +71,7 @@ class Dado {
     this.lado = lado;
   }
   
+  public int getValor(){
+    return this.valor;
+  }
 }
