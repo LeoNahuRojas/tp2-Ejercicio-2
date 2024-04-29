@@ -5,14 +5,18 @@ class Tronco extends GameObject{
    public Tronco(){
      this.imagen = loadImage("log.png");
    }
+   
+   public void display(){
+     image(this.imagen, this.posicion.x,this.posicion.y,this.ancho,this.alto);
+   }
 
-  public void setAncho(){
+  public void setAncho(int ancho){
     this.ancho = ancho;
   }
   public int getAncho(){
   return this.ancho;
   }
-  public void setAlto(){
+  public void setAlto(int alto){
   this.alto = alto;
   }
   public int getAlto(){
