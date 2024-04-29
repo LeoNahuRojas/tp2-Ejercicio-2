@@ -1,0 +1,2 @@
+class Frogger extends GameObject{
+}
