@@ -1,14 +1,16 @@
 class GameObject {
-protected PVector Posicion;
-protected PImage Imagen;
+protected PVector posicion;
+protected PImage imagen;
 
-public void display(){}
+public void display(){
+  image(this.imagen, this.posicion.x, this.posicion.y,45,45);
+}
 
 public void setPosicion(PVector posicion){
-  this.Posicion = posicion;
-}
+  this.posicion = posicion;
+  }
 
-public void getPosicion(){
-
-}
+public PVector getPosicion(){
+  return this.posicion;
+  }
 }
