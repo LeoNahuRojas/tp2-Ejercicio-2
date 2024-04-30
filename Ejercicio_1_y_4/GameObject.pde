@@ -1,6 +1,7 @@
 abstract class GameObject{
   protected PVector posicion;
   protected PImage imagen;
+  protected PVector velocidad;
   
   public PImage getImagen(){
     return this.imagen;
@@ -16,5 +17,9 @@ abstract class GameObject{
   
   public void setPosicion(PVector posicion){
     this.posicion = posicion;
+  }
+  
+  public void setVelocidad(PVector velocidad){
+    this.velocidad = velocidad;
   }
 }
