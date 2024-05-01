@@ -1,14 +1,11 @@
-class Nave extends GameObject implements IController, IDisplayable, IMoveable{
+class Nave extends GameObject {
   
   public Nave(){
     this.imagen = loadImage("Navecita_1.png");
   }
-  
-  void readCommand(){
     
-  }
-  void display(){
-    image(this.imagen, this.posicion.x, this.posicion.y);
+  public void display(){
+    image(this.imagen, this.posicion.x, this.posicion.y,55,55);
   }
   
   void mover(){

@@ -22,4 +22,6 @@ abstract class GameObject{
   public void setVelocidad(PVector velocidad){
     this.velocidad = velocidad;
   }
+  abstract public void display();
+  abstract public void mover();
 }
